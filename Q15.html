@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Date</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #dateButton {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #27ae60;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        #dateButton:hover {
+            background-color: #2ecc71;
+            transform: scale(1.05);
+        }
+
+        #dateButton:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Button -->
+<button id="dateButton" onclick="showDate()">Show Date</button>
+
+<!-- JavaScript -->
+<script>
+function showDate() {
+    alert(new Date()); // Display current date and time
+    document.getElementById("dateButton").innerText = "Thank You!"; // Change button text
+}
+</script>
+
+</body>
+</html>
